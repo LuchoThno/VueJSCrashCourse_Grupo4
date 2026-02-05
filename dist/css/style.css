@@ -23,6 +23,89 @@ html {
  *
  * Customize the background color to match your design.
  */
+:root {
+  --nav-bg: #E8B468;
+  --nav-text: #e2e8f0;
+  --nav-accent: #fb923c;
+  --nav-muted: #94a3b8;
+}
+
+.header {
+  background: linear-gradient(90deg, #E8B468, #0f1b2b);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.navbar {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 18px 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.navbar__links {
+  color: var(--nav-text);
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  font-size: 18px;
+}
+
+.navbar__lista {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar__rutas {
+  color: var(--nav-muted);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.navbar__rutas:hover,
+.navbar__rutas:focus {
+  color: var(--nav-text);
+  transform: translateY(-1px);
+}
+
+.navbar__rutas--cta {
+  background: var(--nav-accent);
+  color: #111827;
+  padding: 10px 16px;
+  border-radius: 999px;
+  font-weight: 700;
+}
+
+.navbar__rutas--cta:hover,
+.navbar__rutas--cta:focus {
+  color: #111827;
+  box-shadow: 0 6px 16px rgba(251, 146, 60, 0.35);
+}
+
+@media (max-width: 720px) {
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .navbar__lista {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
 
 ::-moz-selection {
   background: #b3d4fc;
