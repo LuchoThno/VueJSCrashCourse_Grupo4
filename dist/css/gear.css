@@ -1,0 +1,164 @@
+/* ==========================================================================
+   Gear Section - Custom Styles
+   ========================================================================== */
+
+/* Variables for earth tones */
+:root {
+  --gear-bg: #f5f1e8;
+  --gear-brown: #6b5842;
+  --gear-green: #5a6b4a;
+  --gear-cream: #faf8f3;
+  --gear-accent: #8b7355;
+  --gear-text: #2c2416;
+  --gear-muted: #7a7265;
+  --gear-card-bg: #E8B468;
+}
+
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* General section styles */
+.gear {
+  background: var(--gear-bg);
+  padding: 80px 20px;
+  min-height: 100vh;
+}
+
+/* Intro section */
+.gear__intro {
+  max-width: 800px;
+  margin: 0 auto 60px;
+  text-align: center;
+}
+
+.gear__title {
+  font-family: "Fraunces", serif;
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--gear-brown);
+  margin: 0 0 20px;
+  line-height: 1.2;
+}
+
+.gear__description {
+  font-size: 1.125rem;
+  color: var(--gear-text);
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* Equipment content grid */
+.gear__content {
+  max-width: 1200px;
+  margin: 0 auto 80px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 28px;
+}
+
+/* Equipment items (cards) */
+.gear__item {
+  background: var(--gear-card-bg);
+  border: 2px solid var(--gear-brown);
+  border-radius: 12px;
+  padding: 32px 28px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  scroll-margin-top: 100px;
+}
+
+.gear__item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(107, 88, 66, 0.15);
+}
+
+.gear__item-title {
+  font-family: "Fraunces", serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--gear-green);
+  margin: 0 0 15px;
+  line-height: 1.3;
+}
+
+.gear__item-text {
+  font-size: 1rem;
+  color: var(--gear-muted);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Carousel section */
+.gear__carousel {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.gear__carousel-title {
+  font-family: "Fraunces", serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--gear-brown);
+  text-align: center;
+  margin: 0 0 40px;
+}
+
+.gear__carousel-track {
+  display: flex;
+  gap: 20px;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  padding: 20px 0 40px;
+  scrollbar-width: thin;
+  scrollbar-color: var(--gear-accent) var(--gear-cream);
+}
+
+.gear__carousel-track::-webkit-scrollbar {
+  height: 8px;
+}
+
+.gear__carousel-track::-webkit-scrollbar-track {
+  background: var(--gear-cream);
+  border-radius: 10px;
+}
+
+.gear__carousel-track::-webkit-scrollbar-thumb {
+  background: var(--gear-accent);
+  border-radius: 10px;
+}
+
+.gear__carousel-item {
+  flex: 0 0 300px;
+  scroll-snap-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.gear__carousel-item:hover {
+  transform: scale(1.05);
+}
+
+.gear__carousel-img {
+  width: 100%;
+  height: 250px;
+  object-fit: contain;
+  border-radius: 10px;
+  border: 3px solid var(--gear-brown);
+  background: var(--gear-cream);
+}
+
+.gear__carousel-caption {
+  font-family: "Fraunces", serif;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--gear-green);
+  text-align: center;
+  margin: 0;
+}
