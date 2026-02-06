@@ -14,6 +14,11 @@
   --gear-card-bg: #E8B468;
 }
 
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
 /* General section styles */
 .gear {
   background: var(--gear-bg);
@@ -60,6 +65,7 @@
   border-radius: 12px;
   padding: 32px 28px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  scroll-margin-top: 100px;
 }
 
 .gear__item:hover {
@@ -129,6 +135,14 @@
   display: flex;
   flex-direction: column;
   gap: 15px;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.gear__carousel-item:hover {
+  transform: scale(1.05);
 }
 
 .gear__carousel-img {
