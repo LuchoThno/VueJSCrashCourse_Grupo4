@@ -1,0 +1,44 @@
+/* ==========================================================================
+   Gear Section - Custom Styles
+   ========================================================================== */
+
+/* Variables for earth tones */
+:root {
+  --gear-bg: #f5f1e8;
+  --gear-brown: #6b5842;
+  --gear-green: #5a6b4a;
+  --gear-cream: #faf8f3;
+  --gear-accent: #8b7355;
+  --gear-text: #2c2416;
+  --gear-muted: #7a7265;
+}
+
+/* General section styles */
+.gear {
+  background: var(--gear-bg);
+  padding: 80px 20px;
+  min-height: 100vh;
+}
+
+/* Intro section */
+.gear__intro {
+  max-width: 800px;
+  margin: 0 auto 60px;
+  text-align: center;
+}
+
+.gear__title {
+  font-family: "Fraunces", serif;
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--gear-brown);
+  margin: 0 0 20px;
+  line-height: 1.2;
+}
+
+.gear__description {
+  font-size: 1.125rem;
+  color: var(--gear-text);
+  line-height: 1.7;
+  margin: 0;
+}
