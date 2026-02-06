@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rutas</title>
+  <link rel="stylesheet" href="/dist/css/style.css">
+  <link rel="stylesheet" href="/dist/css/routes.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700&family=Space+Grotesk:wght@400;600&display=swap"
+    rel="stylesheet">
+  <meta name="description" content="Explora nuestras rutas de montaña guiadas">
+
+  <meta property="og:title" content="Rutas de Montaña">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="">
+
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="icon.png" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <a class="navbar__brand" href="index.html">
+        <img class="navbar__logo" src="img/logo.png">
+      </a>
+
+      <ul class="navbar__lista">
+        <li><a class="navbar__rutas" href="index.html">Inicio</a></li>
+        <li><a class="navbar__rutas" href="about.html">Nosotros</a></li>
+        <li><a class="navbar__rutas" href="gear.html">Equipo</a></li>
+        <li><a class="navbar__rutas navbar__rutas--cta" href="routes.html">Rutas</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="routes">
+    <div class="routes__container">
+      <div class="routes__header">
+        <h1 class="routes__title">Rutas populares en Chile</h1>
+        <p class="routes__subtitle">Explora nuestra selección de senderos en Chile</p>
+      </div>
+
+      <section class="routes__list">
+        <article class="routes__card">
+          <div class="routes__image">
+            <img src="../dist/img/route-1.jpg" alt="Mountain route 1" class="routes__img">
+          </div>
+          <div class="routes__content">
+            <h2 class="routes__name">Ruta del Cerro Uno</h2>
+            <p class="routes__difficulty">Dificultad: Moderada</p>
+            <p class="routes__description">Un sendero con vistas impresionantes y dificultad moderada, ideal para
+              montañistas con experiencia.</p>
+            <button class="routes__btn">Ver detalles</button>
+          </div>
+        </article>
+
+        <article class="routes__card">
+          <div class="routes__image">
+            <img src="../dist/img/route-2.jpg" alt="Mountain route 2" class="routes__img">
+          </div>
+          <div class="routes__content">
+            <h2 class="routes__name">Ruta del Cerro Dos</h2>
+            <p class="routes__difficulty">Dificultad: Alta</p>
+            <p class="routes__description">Sendero avanzado para montañistas experimentados que buscan un desafío
+              exigente.</p>
+            <button class="routes__btn">Ver detalles</button>
+          </div>
+        </article>
+
+        <article class="routes__card">
+          <div class="routes__image">
+            <img src="../dist/img/route-3.jpg" alt="Mountain route 3" class="routes__img">
+          </div>
+          <div class="routes__content">
+            <h2 class="routes__name">Ruta del Cerro Tres</h2>
+            <p class="routes__difficulty">Dificultad: Baja</p>
+            <p class="routes__description">Ideal para principiantes y familias. Un paseo escénico con vistas
+              espectaculares.</p>
+            <button class="routes__btn">Ver detalles</button>
+          </div>
+        </article>
+      </section>
+    </div>
+  </main>
+
+  <script src="js/app.js"></script>
+
+</body>
+
+</html>
