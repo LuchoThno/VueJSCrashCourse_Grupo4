@@ -82,3 +82,69 @@
   line-height: 1.6;
   margin: 0;
 }
+
+/* Carousel section */
+.gear__carousel {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.gear__carousel-title {
+  font-family: "Fraunces", serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--gear-brown);
+  text-align: center;
+  margin: 0 0 40px;
+}
+
+.gear__carousel-track {
+  display: flex;
+  gap: 20px;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  padding: 20px 0 40px;
+  scrollbar-width: thin;
+  scrollbar-color: var(--gear-accent) var(--gear-cream);
+}
+
+.gear__carousel-track::-webkit-scrollbar {
+  height: 8px;
+}
+
+.gear__carousel-track::-webkit-scrollbar-track {
+  background: var(--gear-cream);
+  border-radius: 10px;
+}
+
+.gear__carousel-track::-webkit-scrollbar-thumb {
+  background: var(--gear-accent);
+  border-radius: 10px;
+}
+
+.gear__carousel-item {
+  flex: 0 0 300px;
+  scroll-snap-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.gear__carousel-img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 3px solid var(--gear-brown);
+  background: var(--gear-cream);
+}
+
+.gear__carousel-caption {
+  font-family: "Fraunces", serif;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--gear-green);
+  text-align: center;
+  margin: 0;
+}
