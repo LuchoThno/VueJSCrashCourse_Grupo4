@@ -42,3 +42,42 @@
   line-height: 1.7;
   margin: 0;
 }
+
+/* Equipment content grid */
+.gear__content {
+  max-width: 1200px;
+  margin: 0 auto 80px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+/* Equipment items (cards) */
+.gear__item {
+  background: var(--gear-cream);
+  border: 2px solid var(--gear-accent);
+  border-radius: 12px;
+  padding: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gear__item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(107, 88, 66, 0.15);
+}
+
+.gear__item-title {
+  font-family: "Fraunces", serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--gear-green);
+  margin: 0 0 15px;
+  line-height: 1.3;
+}
+
+.gear__item-text {
+  font-size: 1rem;
+  color: var(--gear-muted);
+  line-height: 1.6;
+  margin: 0;
+}
